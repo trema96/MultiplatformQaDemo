@@ -1,6 +1,6 @@
 plugins {
-    kotlin("multiplatform").version("1.6.10")
-    id("org.danilopianini.gradle-kotlin-qa").version("0.9.0")
+    kotlin("multiplatform")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 kotlin {
@@ -19,4 +19,11 @@ kotlin {
     }
 
     linuxX64()
+
+    sourceSets {
+        val commonMain by getting
+        val jvmMain by getting
+        val jsMain by getting
+        val linuxX64Main by getting
+    }
 }

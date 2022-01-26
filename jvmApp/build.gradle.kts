@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm").version("1.6.10")
-    id("org.danilopianini.gradle-kotlin-qa").version("0.9.0")
+    kotlin("jvm")
+    id("org.jlleitschuh.gradle.ktlint")
     application
 }
 
